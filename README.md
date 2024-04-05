@@ -1,2 +1,2 @@
 # javascript
-This is my javascript repository
+- This is my javascript repository
