@@ -2,13 +2,31 @@
     margin: 0;
     padding: 0;
 }
-
-.box {
-    border: 2px solid black;
-    width: 80vw;
-    height: 100vh;
-    margin: auto;
+nav {
+    width: 100vw;
+    height: 100px;
+    background-image: url("./images/logo.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #e6feff;
+}
+form {
+    width: 100vw;
+    height: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
+    border: 2px solid black;
+}
+
+.avator {
+    width: 100vw;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.avator img {
+    height: 100%;
 }
