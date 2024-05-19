@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: #212121;">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit nobis repudiandae dolore praesentium sunt dignissimos iste! Corporis quas perferendis deserunt maxime aspernatur corrupti eos atque excepturi, vel possimus voluptatem eum?
+</body>
+<script>
+    const requestUrl = 'https://api.github.com/users/tarandeep9988'
+    const xhr = new XMLHttpRequest();
+    xhr.open('GET', requestUrl)
+    xhr.onreadystatechange = function() {
+        console.log(xhr.readyState)
+        if (xhr.readyState === 4) {
+            const data = JSON.parse(this.responseText);
+            console.log(data);
+            console.log(data.followers);
+        }
+    }
+    xhr.send()
+</script>
+</html>
